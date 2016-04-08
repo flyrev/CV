@@ -1,0 +1,171 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+
+% Uncomment the following lines to use the Palatino font.  Remove the
+% [osf] bit if you don't like the old style figures.
+%
+% \usepackage[T1]{fontenc}
+% \usepackage[osf]{mathpazo}
+
+% Set your name here
+\def\name{Christian Jonassen}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Customize section headings
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+
+% Alternative section fonts:
+%\sectionfont{\rmfamily\bfseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+% {\huge \name}
+
+% Alternatively, print name centered and bold:
+\centerline{\LARGE Curriculum Vitae}
+
+\centerline{}
+
+\centerline{\huge \name}
+
+\vspace{0.25in}
+
+\begin{minipage}[t]{0.5\textwidth}
+  Født: 14. november, 1988 \\
+  Yrke: Student
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  Epost: \href{mailto:chrijon@idi.ntnu.no}{\tt chrijon@idi.ntnu.no} \\
+  Mobil: 47 65 81 52
+\end{minipage}
+
+\section*{Utdanning}
+
+\begin{itemize}
+  \item (2011-2012): Utvekslingsstudent ved UCSD.
+  \item (2010-2014): Master i datateknikk ved NTNU (startet egentlig
+    på den fem-årige linjen).
+
+  \item 2007-2010: Bachelor i informatikk ved NTNU. Bachelorprosjektet
+    var å lage en Git-plugin for Smeedee, et verktøy utviklet av
+    Capgemini for å overvåke endringer i et repository. www.smeedee.org
+\end{itemize}
+
+\section*{Arbeidserfaring fra NTNU}
+\begin{itemize}
+\item (Vår 2014): Studentassistent i TDT4100: Objektorientert programering.
+\item Høst 2013: Undervisningsassistent i TDT4120: Algoritmer og
+  datastrukturer. Holdt øvingsforelesninger og organiserte saltider for
+  studentassistentene i faget.
+\item Vår 2013: Studentassistent i TDT4100: Objektorientert
+  programmering. Kåret til beste Piazza-stud.ass.
+\item Høst 2012: Studentassistent in TDT4120: Algoritmer og datastrukturer
+
+\item Høst 2010: Undervisningsassistent in IT110: Informatikk basisfag
+  (holdt øvingsforelesninger og var med å lage nye øvinger).
+\item Høst 2009: Studentassistent i  IT110: Informatikk basisfag
+
+\item Vår 2011: Undervisningsassistent i TDT4100: Objektorientert programmering
+\item Høst 2010: Studentassistent i TDT4100: Objektorientert programmering
+
+\item (2010-): Journalist for readme, avisen for Abakus,
+  linjeforeningen for datateknikk og kommunikasjonsteknologi. Stort
+  sett skrevet om algoritmer.
+\item 2010 og 2011: Arrangør av IDI Open og NM i programmering.
+\end{itemize}
+
+\section*{Tidligere erfaringer}
+\subsection*{Sommer 2013: KodeWorks}
+Jobbet med en modifisert Android-plattform. Lagde en del småverktøy og
+apps, men det ble også litt kikking på selve Android-treet.
+\subsection*{Sommer 2011: ARM Trondheim}
+Vi lagde en grafikkdemo for en Android. Det jeg gjorde, var å:
+\begin{itemize}
+\item Skrive et augmented reality-aktig kamerasystem.
+\item Implementere lyd.
+\item Implementere meny.
+\item Skrive noen shell-scripts.
+\item Noe av logikken for i demoen.
+\end{itemize}
+
+\subsection*{2010: Bacheloroppgave for Capgemini}
+I bacheloroppgaven var jeg med på å skrive en Git-plugin for Smeedee,
+et verktøy utviklet av Capgemini. Smeedee er skrevet i C\# og utviklet
+stort sett test-drevet, som vår plugin også ble. Vi brukte
+et bibliotek som het GitSharp for å få data fra Git-repoet, et
+bibliotek der vi også rapporterte inn en del bugs i løpet av
+prosessen. 
+
+\section*{Programmeringsspråk jeg er kjent med}
+\begin{itemize}
+\item C
+\item C++
+\item C\#
+\item Java
+\item Python
+\item PHP
+\item SQL
+\end{itemize}
+
+Jeg har også (ganske begrenset) erfaring med LISP, OCaml, Haskell og 
+Prolog. Ellers liker jeg også regular expressions.
+
+% Footer
+\begin{center}
+\begin{footnotesize}
+Sist oppdatert: \today \\
+\href{http://folk.ntnu.no/chrijon/cv.pdf}{\tt http://folk.ntnu.no/chrijon/cv.pdf}
+\end{footnotesize}
+\end{center}
+\end{document}
